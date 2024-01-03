@@ -1,0 +1,66 @@
+\documentclass[addpoints]{exam}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tabularx}
+
+% \usepackage{draftwatermark}
+% \SetWatermarkText{Sample Solution}
+% \SetWatermarkScale{3}
+% \printanswers
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{claim}
+\newtheorem{claim}{Claim}
+
+\runningheader{CS/MATH 113 L1}{Quiz 1A}{spring 2024}
+\runningheadrule
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\title{Quiz 1A: Even Numbers}
+\author{CS/MATH 113 Discrete Mathematics L1}
+\date{Habib University | Spring 2024}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\noindent
+\begin{tabularx}{\linewidth}{Xr}
+  Total Marks: \numpoints & Date: \today\\
+  Duration: 10 minutes & Time: 830--840h
+\end{tabularx}
+\hrule
+\bigskip
+
+\noindent \textbf{Student ID}: \hrulefill \\[5pt]
+\noindent \textbf{Student Name}: \hrulefill \\[5pt]
+
+\begin{questions}
+  \question[10] Given the following definition, prove or disprove the claim below.
+
+  % Does anyone have a clean way to make this definition number compile as 1 instead of 0.1?
+  \begin{definition}[Even numbers]
+    An integer is \textit{even} if it can be written as $2k$ for some $k\in\mathbb{Z}$.
+  \end{definition}
+
+  \begin{claim}
+    The sum of two even numbers is even.
+  \end{claim}
+
+  \begin{solution}
+    We attempt a direct proof using the definition of even numbers.
+    \begin{proof}
+      Let the numbers be $x$ and $y$.\\
+      Then $x=2i$ and $y=2j$ for some $i,n\in\mathbb{Z}^+$.\\
+      Then $x+y=2i+2j=2(i+j)$.
+    \end{proof}
+  \end{solution}
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
